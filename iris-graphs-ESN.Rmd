@@ -1,0 +1,22 @@
+---
+title: "Iris-graphs-ESN"
+author: "Eleonore Durand"
+date: "November 13, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+View(iris)
+
+iris_graph <- ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
+  geom_point(color="dodgerblue") +
+  theme_classic()
+
+iris_graph
+```
+
